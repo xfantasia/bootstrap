@@ -1,0 +1,24 @@
+<-----------BOOT STRAP TOAST MESSAGE------------>
+    <div class="toast" id="myToast" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header">
+            <strong class="mr-auto"><!--<i class="fa fa-grav"></i>-->Success!</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body success">
+            Order Update was Successful!
+        </div>
+    </div>
+
+			  
+			
+<script>  
+/*$(document).ready(function(){
+    $("#myToast").toast('show');
+});
+	
+function success_toast(){ 
+    $("#myToast").toast('show');
+}*/
+</script>	
