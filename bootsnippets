@@ -1,5 +1,22 @@
 <-----------BOOT STRAP TOAST MESSAGE------------>
-    <div class="toast" id="myToast" style="position: absolute; top: 0; right: 0;">
+<style>
+div.lockx {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 300px;
+  border: 3px solid #00397B;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #C6ECFF;
+}
+</style>
+
+
+  
+<!--TOAST MESSAGE-->
+
+    <div class="toast lockx"  data-autohide="true" id="myToast" data-delay="2200" style="display: none;">
         <div class="toast-header">
             <strong class="mr-auto"><!--<i class="fa fa-grav"></i>-->Success!</strong>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
@@ -10,15 +27,16 @@
             Order Update was Successful!
         </div>
     </div>
-
-			  
-			
-<script>  
-/*$(document).ready(function(){
-    $("#myToast").toast('show');
-});
-	
-function success_toast(){ 
-    $("#myToast").toast('show');
-}*/
-</script>	
+    
+    
+    
+    
+ <!--JAVASCRIPT TOAST MESSAGE ACTIVATION-->
+ <script>
+ 	function show_toast_message(){
+		var x = document.getElementById("myToast");
+		x.style.display = "block";
+		$("#myToast").toast('show');
+	}
+ <script>
+ 
